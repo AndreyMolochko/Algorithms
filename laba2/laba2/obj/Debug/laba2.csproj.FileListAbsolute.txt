@@ -1,0 +1,7 @@
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\bin\Debug\laba2.exe.config
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\bin\Debug\laba2.exe
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\bin\Debug\laba2.pdb
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\obj\Debug\laba2.csprojResolveAssemblyReference.cache
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\obj\Debug\laba2.csproj.CoreCompileInputs.cache
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\obj\Debug\laba2.exe
+D:\2andrey2\sem\4 semester\algorithms\laba2\laba2\obj\Debug\laba2.pdb
