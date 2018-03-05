@@ -42,13 +42,13 @@ namespace laba2
         }
         public String RecursSearch(int []array,int i,int last,int number)
         {
-            Console.WriteLine(array[2000]);
+            //Console.WriteLine(array[2000]);
             if (i == last) return "not-found";
             else
             {
                 if (array[i].Equals(number)) return i.ToString();
                 else RecursSearch(array, i + 1, last, number);                
-                return "fdfdf";
+                return "not-found";
             }
             
         }

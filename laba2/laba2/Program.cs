@@ -50,17 +50,26 @@ namespace laba2
         {
             
             int dimA = 500, dimB = 1000, dimC = 5000;
-            int[] arrayA = new int[] { -7, 1, 3, 3, 4, 7, 11, 13 };
+            int[] arrayA = new int[] { -7, 1, 3, 3, 4, 7, 11, 13, 7 };
             int[] arrayB = new int[] { -7, 2, 2, 3, 4, 7, 8, 11, 13 };
             int[] arrayC = new int[] { -7, 1, 2, 3, 5, 7, 10, 13 };
             int[] a = new int[dimC];
-            Exercise3 exercise = new Exercise3();
+            Exercise3 exercise = new Exercise3();            
             Console.WriteLine(LinearSearch(7,arrayA));
-            Console.WriteLine(BinarySearchSecond(8, arrayB));
+            Console.WriteLine(BinarySearchSecond(2, arrayB));
             Console.WriteLine(BinarySearchSecond(8, arrayC));
+            System.Diagnostics.Stopwatch myStopwatch = new System.Diagnostics.Stopwatch();
+            myStopwatch.Start();
+            Console.WriteLine(myStopwatch.Elapsed);
             Console.WriteLine(exercise.First(a,dimC,4999));
-            Console.WriteLine(exercise.Second(a, dimC, 4899));            
-            Console.WriteLine(exercise.RecursSearch(a,0, dimC, 8));
+            myStopwatch.Stop();
+            Console.WriteLine(myStopwatch.Elapsed);
+            myStopwatch.Start();
+            Console.WriteLine(myStopwatch.Elapsed);
+            Console.WriteLine(exercise.Second(a, dimC, 4999));
+            myStopwatch.Stop();
+            Console.WriteLine(myStopwatch.Elapsed);            
+            Console.WriteLine(exercise.RecursSearch(a,0, dimC, 5600));            
             Console.ReadKey(true);
         }
     }
