@@ -11,7 +11,7 @@ namespace laba4
         int[] a;
         int[] b;
         int[] c;
-        int n = 10;
+        int n = 200000;
         public Sortings()
         {
             a = new int[n];
@@ -20,11 +20,30 @@ namespace laba4
             FillDataArray(a);
             FillDataArray(b);
             FillDataArray(c);
-            Output(a);
-            a=MergeSort(a);
-            Console.WriteLine("___________");
-            Output(a);
-            
+            System.Diagnostics.Stopwatch myStopwatch1 = new System.Diagnostics.Stopwatch();
+            System.Diagnostics.Stopwatch myStopwatch2 = new System.Diagnostics.Stopwatch();
+            System.Diagnostics.Stopwatch myStopwatch3 = new System.Diagnostics.Stopwatch();
+            myStopwatch1.Start();
+            Console.WriteLine(myStopwatch1.Elapsed);
+            CoutingSort(a, 0, 300);
+            myStopwatch1.Stop();
+            Console.WriteLine(myStopwatch1.Elapsed);
+            Console.WriteLine("________Selection___________");
+            myStopwatch2.Start();
+            Console.WriteLine(myStopwatch2.Elapsed);
+            SelectionSort(a);
+            myStopwatch2.Stop();
+            Console.WriteLine(myStopwatch2.Elapsed);
+            Console.WriteLine("_________Merge___________");
+            myStopwatch3.Start();
+            Console.WriteLine(myStopwatch3.Elapsed);
+            a = MergeSort(a);
+            myStopwatch3.Stop();
+            Console.WriteLine(myStopwatch3.Elapsed);
+            //a = MergeSort(a);
+            //Console.WriteLine("___________");
+            //Output(a);
+
         }
         public void FillDataArray(int []a)
         {
