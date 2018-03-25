@@ -17,11 +17,10 @@ namespace laba4
             a = new int[n];
             b = new int[n];
             c = new int[n];
+            FillDataArray(a);
             FillDataArray(b);
-            Output(b);
-            CoutingSort(b, 0, 300);
-            Console.WriteLine("_____________________");
-            Output(b);
+            FillDataArray(c);
+            
         }
         public void FillDataArray(int []a)
         {
@@ -53,6 +52,31 @@ namespace laba4
                 {
                     arr[z] = i;
                     z++;
+                }
+            }
+        }
+        public void SelectionSort(int[] arr)
+        {
+            int min, temp;
+            int length = arr.Length;
+
+            for (int i = 0; i < length - 1; i++)
+            {
+                min = i;
+
+                for (int j = i + 1; j < length; j++)
+                {
+                    if (arr[j] < arr[min])
+                    {
+                        min = j;
+                    }
+                }
+
+                if (min != i)
+                {
+                    temp = arr[i];
+                    arr[i] = arr[min];
+                    arr[min] = temp;
                 }
             }
         }
