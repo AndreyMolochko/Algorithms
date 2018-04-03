@@ -11,7 +11,7 @@ namespace laba4
         int[] a;
         int[] b;
         int[] c;
-        int n = 200000;
+        int n = 25000;
         public Sortings()
         {
             a = new int[n];
